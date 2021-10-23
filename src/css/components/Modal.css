@@ -1,0 +1,142 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.15s, visibility 0.15s linear;
+    cursor: pointer;
+}
+
+.modal_open {
+    opacity: 1;
+    visibility: visible;
+    background-color: rgba(0,0,0,.2);
+}
+
+.modal__content {
+    margin: auto;
+    width: 80%;
+    height: 80%;
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: default;
+}
+
+.modal__header {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal__btn_close {
+    margin-left: auto;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    border: none;
+    background-color: #fff;
+    background-image: url("../../media/close_btn.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 18px;
+    cursor: pointer;
+}
+
+.modal__img {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.modal__body {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal__text {
+    margin: 0;
+    font-size: 22px;
+}
+
+@media screen and (max-width: 1366px ) {
+    .modal__img {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1024px ) {
+    .modal__img {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px ) {
+    .modal__img {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 700px ) {
+    .modal__img {
+        width: 85%;
+    }
+
+    .modal__text {
+        margin: 0;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 550px ) {
+    .modal__content {
+        width: 90%;
+        height: 70%;
+    }
+
+    .modal__body {
+        padding: 10px;
+    }
+
+    .modal__text {
+        margin: 0;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 426px ) {
+    .modal__content {
+        height: 75%;
+    }
+
+    .modal__img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 376px ) {
+    .modal__content {
+        height: 65%;
+    }
+
+    .modal__body {
+        flex-direction: column;
+    }
+
+    .modal__text {
+        margin: 0;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 320px ) {
+    .modal__content {
+        height: 60%;
+    }
+}

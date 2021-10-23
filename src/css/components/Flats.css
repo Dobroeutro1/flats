@@ -1,0 +1,36 @@
+.flats__title {
+    margin: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.flats__btn-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flats__btn {
+    margin-right: 10px;
+    padding: 5px;
+    background-color: #3f56d5;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.flats__btn:last-child {
+    margin-right: 0;
+}
+
+.flats__btn:disabled {
+    opacity: .5;
+    cursor: default;
+}
+
+.flats__count {
+    margin: 0 10px 0 0;
+    color: #fff;
+}

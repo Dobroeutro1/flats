@@ -1,0 +1,19 @@
+@import url("css/components/Flats.css");
+@import url("css/components/FlatList.css");
+@import url("../src/css/components/Sidebar.css");
+@import url("css/components/FlatCard.css");
+@import url("css/components/Modal.css");
+@import url("css/components/Filter.css");
+@import url("css/components/Sort.css");
+
+body {
+  margin: 0;
+  padding: 15px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #282c34;
+
+}
